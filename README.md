@@ -1,10 +1,12 @@
-# js-lab-146
-### Lab 146 ES6: ฟังก์ชัน filterOutOdds
-จงเขียนฟังก์ชัน filterOutOdds โดยพารามิเตอร์ของฟังก์ชันสามารถรับตัวเลขได้ไม่จำกัด และให้ return ค่าเป็น array ของเลขที่เป็นเลขคู่
+# js-lab-147
+### Lab 147 ES6: ฟังก์ชัน mergeObjects
+จงเขียนฟังก์ชัน mergeObjects โดยพารามิเตอร์ของฟังก์ชันสามารถรับ Object ได้ไม่จำกัด และให้ return ค่าเป็น Object ที่เกิดจาก Object ในพารามิเตอร์มา merge กัน (ในกรณีที่ Object ในพารามิเตอร์มี key ซ้ำกันให้ยึดค่าพารามิเตอร์ตัวที่มาก่อนเป็นหลัก)
 
 ```JavaScript
-console.log(filterOutOdds(1, 2, 3, 4, 5, 6)); // [2, 4, 6]
-console.log(filterOutOdds(7, 8, 9, 10, 11, 12)); // [8, 10, 12]
-console.log(filterOutOdds(15, 17, 19)); // []
-console.log(filterOutOdds()); // []
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+const obj3 = { d: 5 };
+
+console.log(mergeObjects(obj1, obj2, obj3));
+// { a: 1, b: 3, c: 4, d: 5 }
 ```
